@@ -39,7 +39,6 @@ apis:
   - name: Transport for Vancouver, Canada
     description: "TransLink"
     humanURL: https://developer.translink.ca/
-    baseURL: https://developer.translink.ca/
     tags:
       - Transportation
     properties:
