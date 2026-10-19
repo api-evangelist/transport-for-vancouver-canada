@@ -1,0 +1,74 @@
+edges:
+- partner_name: GTFS (MobilityData Mobility Database)
+  partner: null
+  partner_match: register
+  type: register
+  direction: partner-built
+  evidence: https://mobilitydatabase.org/feeds/mdb-696
+  category: GTFS transit feed
+  channel: standard-directory
+  relationship: standard-participant
+  contract_reference:
+    register: Mobility Database feeds export (files.mobilitydatabase.org/feeds_v2.csv, MobilityData)
+    standard: GTFS / GTFS-Realtime
+    spec_file: null
+    role: gtfs-feed-publisher
+    registered_name: TransLink Vancouver
+    register_id: mdb-696
+    matched_domain: translink.ca
+    matched_by: domain+verified
+    domain_source: feed download URL host
+    data_types: &id001
+    - gtfs
+    - gtfs_rt
+    feed_ids_sample:
+    - mdb-1705
+    - mdb-1706
+    - mdb-1707
+    - mdb-3348
+    - mdb-3349
+    - mdb-3350
+    official: true
+    lapsed: false
+    signal_note: 'participation only: a feed published on the provider''s own domain; feed counts, statuses and
+      locations are context, never counted. lapsed = every listed feed deprecated / inactive'
+    detected_by: sweep-transit-mobility.py
+    detected: '2026-10-18'
+  detected_by: sweep-transit-mobility.py
+  first_seen: '2026-10-18'
+- partner_name: GTFS (MobilityData Mobility Database)
+  partner: null
+  partner_match: register
+  type: register
+  direction: partner-built
+  evidence: https://mobilitydatabase.org/feeds/mdb-696
+  category: GTFS transit feed
+  channel: standard-directory
+  relationship: compatible
+  shape: gtfs
+  evidence_kind: standard-register
+  degree: published
+  report_only: true
+  note: publishes a GTFS / GTFS-Realtime feed on its own domain, listed in the Mobility Database (no anchor repo)
+  contract_reference:
+    register: Mobility Database feeds export (files.mobilitydatabase.org/feeds_v2.csv, MobilityData)
+    spec_file: null
+    standard: GTFS
+    role: gtfs-feed-publisher
+    registered_name: TransLink Vancouver
+    matched_domain: translink.ca
+    data_types: *id001
+    detected_by: sweep-transit-mobility.py
+    detected: '2026-10-18'
+  detected_by: sweep-transit-mobility.py
+  first_seen: '2026-10-18'
+generated: '2026-10-18'
+method: searched
+source:
+- https://files.mobilitydatabase.org/feeds_v2.csv
+- https://github.com/MobilityData/gbfs/blob/master/systems.csv
+- https://maas-alliance.eu/
+checked:
+- https://files.mobilitydatabase.org/feeds_v2.csv
+- https://github.com/MobilityData/gbfs/blob/master/systems.csv
+- https://maas-alliance.eu/
